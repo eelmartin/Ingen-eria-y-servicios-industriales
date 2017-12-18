@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tc_CarteraP = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.gb_registro = new System.Windows.Forms.GroupBox();
@@ -45,8 +46,18 @@
             this.lb_nomp = new System.Windows.Forms.Label();
             this.tab_ConGene = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_Actu = new System.Windows.Forms.Button();
             this.dataG_ConsultaGProyectos = new System.Windows.Forms.DataGridView();
+            this.numeroProyectoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreProyectoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoProyectoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaInicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoProyectoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.abonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manodeObraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaFinalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proyectoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ingenieriayServiciosIndustrialesDataSet2 = new Ingeníeria_y_servicios_industriales.IngenieriayServiciosIndustrialesDataSet2();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tc_CEproyecto = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -55,36 +66,29 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_compra = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.gb_CEdatosP = new System.Windows.Forms.GroupBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txt_estado = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txt_monto = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt_tipo = new System.Windows.Forms.TextBox();
+            this.txt_fechaFin = new System.Windows.Forms.TextBox();
+            this.txt_fechaInicio = new System.Windows.Forms.TextBox();
+            this.txt_nombreCliente = new System.Windows.Forms.TextBox();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_CEbuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgv_proyecto2 = new System.Windows.Forms.DataGridView();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
@@ -111,24 +115,31 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.pn_carteraP = new System.Windows.Forms.Panel();
+            this.proyectoTableAdapter = new Ingeníeria_y_servicios_industriales.IngenieriayServiciosIndustrialesDataSet2TableAdapters.ProyectoTableAdapter();
+            this.cmb_proyecto = new System.Windows.Forms.ComboBox();
+            this.dgv_servicio = new System.Windows.Forms.DataGridView();
+            this.cmb_cliente2 = new System.Windows.Forms.ComboBox();
             this.tc_CarteraP.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_registro.SuspendLayout();
             this.tab_ConGene.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataG_ConsultaGProyectos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tc_CEproyecto.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_compra)).BeginInit();
             this.gb_CEdatosP.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_proyecto2)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.pn_carteraP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_servicio)).BeginInit();
             this.SuspendLayout();
             // 
             // tc_CarteraP
@@ -315,7 +326,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btn_Actu);
             this.groupBox1.Controls.Add(this.dataG_ConsultaGProyectos);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(18, 21);
@@ -325,26 +335,120 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta General";
             // 
-            // btn_Actu
-            // 
-            this.btn_Actu.Location = new System.Drawing.Point(381, 408);
-            this.btn_Actu.Name = "btn_Actu";
-            this.btn_Actu.Size = new System.Drawing.Size(96, 27);
-            this.btn_Actu.TabIndex = 1;
-            this.btn_Actu.Text = "Actualizar";
-            this.btn_Actu.UseVisualStyleBackColor = true;
-            this.btn_Actu.Click += new System.EventHandler(this.btn_Actu_Click);
-            // 
             // dataG_ConsultaGProyectos
             // 
-            this.dataG_ConsultaGProyectos.AllowUserToOrderColumns = true;
+            this.dataG_ConsultaGProyectos.AllowUserToAddRows = false;
+            this.dataG_ConsultaGProyectos.AllowUserToDeleteRows = false;
+            this.dataG_ConsultaGProyectos.AutoGenerateColumns = false;
             this.dataG_ConsultaGProyectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataG_ConsultaGProyectos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.numeroProyectoDataGridViewTextBoxColumn,
+            this.nombreProyectoDataGridViewTextBoxColumn,
+            this.descripcionDataGridViewTextBoxColumn,
+            this.estadoProyectoDataGridViewTextBoxColumn,
+            this.fechaInicioDataGridViewTextBoxColumn,
+            this.tipoProyectoDataGridViewTextBoxColumn,
+            this.abonoDataGridViewTextBoxColumn,
+            this.manodeObraDataGridViewTextBoxColumn,
+            this.fechaFinalDataGridViewTextBoxColumn});
+            this.dataG_ConsultaGProyectos.DataSource = this.proyectoBindingSource;
             this.dataG_ConsultaGProyectos.Location = new System.Drawing.Point(20, 25);
             this.dataG_ConsultaGProyectos.Name = "dataG_ConsultaGProyectos";
+            this.dataG_ConsultaGProyectos.ReadOnly = true;
             this.dataG_ConsultaGProyectos.RowTemplate.ReadOnly = true;
             this.dataG_ConsultaGProyectos.ShowCellErrors = false;
             this.dataG_ConsultaGProyectos.Size = new System.Drawing.Size(778, 377);
             this.dataG_ConsultaGProyectos.TabIndex = 0;
+            // 
+            // numeroProyectoDataGridViewTextBoxColumn
+            // 
+            this.numeroProyectoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.numeroProyectoDataGridViewTextBoxColumn.DataPropertyName = "NumeroProyecto";
+            this.numeroProyectoDataGridViewTextBoxColumn.HeaderText = "# Proyecto";
+            this.numeroProyectoDataGridViewTextBoxColumn.Name = "numeroProyectoDataGridViewTextBoxColumn";
+            this.numeroProyectoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreProyectoDataGridViewTextBoxColumn
+            // 
+            this.nombreProyectoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nombreProyectoDataGridViewTextBoxColumn.DataPropertyName = "NombreProyecto";
+            this.nombreProyectoDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreProyectoDataGridViewTextBoxColumn.Name = "nombreProyectoDataGridViewTextBoxColumn";
+            this.nombreProyectoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nombreProyectoDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripción";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descripcionDataGridViewTextBoxColumn.Width = 117;
+            // 
+            // estadoProyectoDataGridViewTextBoxColumn
+            // 
+            this.estadoProyectoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.estadoProyectoDataGridViewTextBoxColumn.DataPropertyName = "EstadoProyecto";
+            this.estadoProyectoDataGridViewTextBoxColumn.HeaderText = "Estado";
+            this.estadoProyectoDataGridViewTextBoxColumn.Name = "estadoProyectoDataGridViewTextBoxColumn";
+            this.estadoProyectoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estadoProyectoDataGridViewTextBoxColumn.Width = 85;
+            // 
+            // fechaInicioDataGridViewTextBoxColumn
+            // 
+            this.fechaInicioDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.fechaInicioDataGridViewTextBoxColumn.DataPropertyName = "FechaInicio";
+            this.fechaInicioDataGridViewTextBoxColumn.HeaderText = "Fecha de inicio";
+            this.fechaInicioDataGridViewTextBoxColumn.Name = "fechaInicioDataGridViewTextBoxColumn";
+            this.fechaInicioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fechaInicioDataGridViewTextBoxColumn.Width = 96;
+            // 
+            // tipoProyectoDataGridViewTextBoxColumn
+            // 
+            this.tipoProyectoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.tipoProyectoDataGridViewTextBoxColumn.DataPropertyName = "TipoProyecto";
+            this.tipoProyectoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoProyectoDataGridViewTextBoxColumn.Name = "tipoProyectoDataGridViewTextBoxColumn";
+            this.tipoProyectoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipoProyectoDataGridViewTextBoxColumn.Width = 64;
+            // 
+            // abonoDataGridViewTextBoxColumn
+            // 
+            this.abonoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.abonoDataGridViewTextBoxColumn.DataPropertyName = "Abono";
+            this.abonoDataGridViewTextBoxColumn.HeaderText = "Abono";
+            this.abonoDataGridViewTextBoxColumn.Name = "abonoDataGridViewTextBoxColumn";
+            this.abonoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.abonoDataGridViewTextBoxColumn.Width = 81;
+            // 
+            // manodeObraDataGridViewTextBoxColumn
+            // 
+            this.manodeObraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.manodeObraDataGridViewTextBoxColumn.DataPropertyName = "ManodeObra";
+            this.manodeObraDataGridViewTextBoxColumn.HeaderText = "Mano de Obra";
+            this.manodeObraDataGridViewTextBoxColumn.Name = "manodeObraDataGridViewTextBoxColumn";
+            this.manodeObraDataGridViewTextBoxColumn.ReadOnly = true;
+            this.manodeObraDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // fechaFinalDataGridViewTextBoxColumn
+            // 
+            this.fechaFinalDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.fechaFinalDataGridViewTextBoxColumn.DataPropertyName = "FechaFinal";
+            this.fechaFinalDataGridViewTextBoxColumn.HeaderText = "Fecha de terminación";
+            this.fechaFinalDataGridViewTextBoxColumn.Name = "fechaFinalDataGridViewTextBoxColumn";
+            this.fechaFinalDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fechaFinalDataGridViewTextBoxColumn.Width = 170;
+            // 
+            // proyectoBindingSource
+            // 
+            this.proyectoBindingSource.DataMember = "Proyecto";
+            this.proyectoBindingSource.DataSource = this.ingenieriayServiciosIndustrialesDataSet2;
+            // 
+            // ingenieriayServiciosIndustrialesDataSet2
+            // 
+            this.ingenieriayServiciosIndustrialesDataSet2.DataSetName = "IngenieriayServiciosIndustrialesDataSet2";
+            this.ingenieriayServiciosIndustrialesDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage2
             // 
@@ -369,16 +473,13 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.dgv_servicio);
+            this.tabPage4.Controls.Add(this.cmb_proyecto);
             this.tabPage4.Controls.Add(this.groupBox2);
-            this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Controls.Add(this.dgv_compra);
             this.tabPage4.Controls.Add(this.label7);
             this.tabPage4.Controls.Add(this.gb_CEdatosP);
-            this.tabPage4.Controls.Add(this.btn_CEbuscar);
             this.tabPage4.Controls.Add(this.label1);
-            this.tabPage4.Controls.Add(this.radioButton2);
-            this.tabPage4.Controls.Add(this.radioButton1);
-            this.tabPage4.Controls.Add(this.textBox2);
-            this.tabPage4.Controls.Add(this.textBox1);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -393,7 +494,7 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(527, 344);
+            this.groupBox2.Location = new System.Drawing.Point(527, 305);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(410, 201);
             this.groupBox2.TabIndex = 10;
@@ -436,18 +537,18 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Monto Total de Ordenes:";
             // 
-            // dataGridView1
+            // dgv_compra
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 373);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(483, 172);
-            this.dataGridView1.TabIndex = 9;
+            this.dgv_compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_compra.Location = new System.Drawing.Point(26, 326);
+            this.dgv_compra.Name = "dgv_compra";
+            this.dgv_compra.Size = new System.Drawing.Size(400, 115);
+            this.dgv_compra.TabIndex = 9;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 344);
+            this.label7.Location = new System.Drawing.Point(22, 297);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(226, 20);
             this.label7.TabIndex = 7;
@@ -455,35 +556,35 @@
             // 
             // gb_CEdatosP
             // 
-            this.gb_CEdatosP.Controls.Add(this.textBox17);
+            this.gb_CEdatosP.Controls.Add(this.txt_estado);
             this.gb_CEdatosP.Controls.Add(this.label24);
-            this.gb_CEdatosP.Controls.Add(this.textBox16);
+            this.gb_CEdatosP.Controls.Add(this.txt_monto);
             this.gb_CEdatosP.Controls.Add(this.label23);
-            this.gb_CEdatosP.Controls.Add(this.textBox15);
-            this.gb_CEdatosP.Controls.Add(this.textBox14);
-            this.gb_CEdatosP.Controls.Add(this.textBox13);
-            this.gb_CEdatosP.Controls.Add(this.textBox12);
-            this.gb_CEdatosP.Controls.Add(this.textBox11);
-            this.gb_CEdatosP.Controls.Add(this.textBox10);
+            this.gb_CEdatosP.Controls.Add(this.txt_tipo);
+            this.gb_CEdatosP.Controls.Add(this.txt_fechaFin);
+            this.gb_CEdatosP.Controls.Add(this.txt_fechaInicio);
+            this.gb_CEdatosP.Controls.Add(this.txt_nombreCliente);
+            this.gb_CEdatosP.Controls.Add(this.txt_descripcion);
+            this.gb_CEdatosP.Controls.Add(this.txt_nombre);
             this.gb_CEdatosP.Controls.Add(this.label12);
             this.gb_CEdatosP.Controls.Add(this.label6);
             this.gb_CEdatosP.Controls.Add(this.label5);
             this.gb_CEdatosP.Controls.Add(this.label4);
             this.gb_CEdatosP.Controls.Add(this.label3);
             this.gb_CEdatosP.Controls.Add(this.label2);
-            this.gb_CEdatosP.Location = new System.Drawing.Point(32, 113);
+            this.gb_CEdatosP.Location = new System.Drawing.Point(32, 77);
             this.gb_CEdatosP.Name = "gb_CEdatosP";
             this.gb_CEdatosP.Size = new System.Drawing.Size(800, 210);
             this.gb_CEdatosP.TabIndex = 6;
             this.gb_CEdatosP.TabStop = false;
             this.gb_CEdatosP.Text = "Datos del Proyecto";
             // 
-            // textBox17
+            // txt_estado
             // 
-            this.textBox17.Location = new System.Drawing.Point(553, 139);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(161, 26);
-            this.textBox17.TabIndex = 15;
+            this.txt_estado.Location = new System.Drawing.Point(553, 139);
+            this.txt_estado.Name = "txt_estado";
+            this.txt_estado.Size = new System.Drawing.Size(161, 26);
+            this.txt_estado.TabIndex = 15;
             // 
             // label24
             // 
@@ -494,12 +595,12 @@
             this.label24.TabIndex = 14;
             this.label24.Text = "Estado:";
             // 
-            // textBox16
+            // txt_monto
             // 
-            this.textBox16.Location = new System.Drawing.Point(137, 163);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(181, 26);
-            this.textBox16.TabIndex = 13;
+            this.txt_monto.Location = new System.Drawing.Point(137, 163);
+            this.txt_monto.Name = "txt_monto";
+            this.txt_monto.Size = new System.Drawing.Size(181, 26);
+            this.txt_monto.TabIndex = 13;
             // 
             // label23
             // 
@@ -510,48 +611,48 @@
             this.label23.TabIndex = 12;
             this.label23.Text = "Monto abonado:";
             // 
-            // textBox15
+            // txt_tipo
             // 
-            this.textBox15.Location = new System.Drawing.Point(553, 104);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(161, 26);
-            this.textBox15.TabIndex = 11;
+            this.txt_tipo.Location = new System.Drawing.Point(553, 104);
+            this.txt_tipo.Name = "txt_tipo";
+            this.txt_tipo.Size = new System.Drawing.Size(161, 26);
+            this.txt_tipo.TabIndex = 11;
             // 
-            // textBox14
+            // txt_fechaFin
             // 
-            this.textBox14.Location = new System.Drawing.Point(553, 69);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(161, 26);
-            this.textBox14.TabIndex = 10;
+            this.txt_fechaFin.Location = new System.Drawing.Point(553, 69);
+            this.txt_fechaFin.Name = "txt_fechaFin";
+            this.txt_fechaFin.Size = new System.Drawing.Size(161, 26);
+            this.txt_fechaFin.TabIndex = 10;
             // 
-            // textBox13
+            // txt_fechaInicio
             // 
-            this.textBox13.Location = new System.Drawing.Point(553, 34);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(161, 26);
-            this.textBox13.TabIndex = 9;
+            this.txt_fechaInicio.Location = new System.Drawing.Point(553, 34);
+            this.txt_fechaInicio.Name = "txt_fechaInicio";
+            this.txt_fechaInicio.Size = new System.Drawing.Size(161, 26);
+            this.txt_fechaInicio.TabIndex = 9;
             // 
-            // textBox12
+            // txt_nombreCliente
             // 
-            this.textBox12.Location = new System.Drawing.Point(137, 128);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(181, 26);
-            this.textBox12.TabIndex = 8;
+            this.txt_nombreCliente.Location = new System.Drawing.Point(137, 128);
+            this.txt_nombreCliente.Name = "txt_nombreCliente";
+            this.txt_nombreCliente.Size = new System.Drawing.Size(181, 26);
+            this.txt_nombreCliente.TabIndex = 8;
             // 
-            // textBox11
+            // txt_descripcion
             // 
-            this.textBox11.Location = new System.Drawing.Point(137, 71);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(181, 51);
-            this.textBox11.TabIndex = 7;
+            this.txt_descripcion.Location = new System.Drawing.Point(137, 71);
+            this.txt_descripcion.Multiline = true;
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.Size = new System.Drawing.Size(181, 51);
+            this.txt_descripcion.TabIndex = 7;
             // 
-            // textBox10
+            // txt_nombre
             // 
-            this.textBox10.Location = new System.Drawing.Point(137, 31);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(181, 26);
-            this.textBox10.TabIndex = 6;
+            this.txt_nombre.Location = new System.Drawing.Point(137, 31);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(181, 26);
+            this.txt_nombre.TabIndex = 6;
             // 
             // label12
             // 
@@ -607,66 +708,20 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre:";
             // 
-            // btn_CEbuscar
-            // 
-            this.btn_CEbuscar.Location = new System.Drawing.Point(368, 46);
-            this.btn_CEbuscar.Name = "btn_CEbuscar";
-            this.btn_CEbuscar.Size = new System.Drawing.Size(83, 40);
-            this.btn_CEbuscar.TabIndex = 5;
-            this.btn_CEbuscar.Text = "Buscar";
-            this.btn_CEbuscar.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 10);
+            this.label1.Location = new System.Drawing.Point(389, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.Size = new System.Drawing.Size(155, 20);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Buscar por:";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(26, 68);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(173, 24);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nombre del proyecto";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 34);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(170, 24);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Número de proyecto";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(218, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 26);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(218, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 26);
-            this.textBox1.TabIndex = 0;
+            this.label1.Text = "Buscar por proyecto:";
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.dataGridView2);
+            this.tabPage5.Controls.Add(this.cmb_cliente2);
+            this.tabPage5.Controls.Add(this.dgv_proyecto2);
             this.tabPage5.Controls.Add(this.label14);
-            this.tabPage5.Controls.Add(this.button1);
-            this.tabPage5.Controls.Add(this.textBox3);
             this.tabPage5.Controls.Add(this.label13);
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
@@ -676,13 +731,13 @@
             this.tabPage5.Text = "Consulta por Cliente";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dgv_proyecto2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(20, 135);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(623, 253);
-            this.dataGridView2.TabIndex = 4;
+            this.dgv_proyecto2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_proyecto2.Location = new System.Drawing.Point(20, 135);
+            this.dgv_proyecto2.Name = "dgv_proyecto2";
+            this.dgv_proyecto2.Size = new System.Drawing.Size(623, 253);
+            this.dgv_proyecto2.TabIndex = 4;
             // 
             // label14
             // 
@@ -693,30 +748,14 @@
             this.label14.TabIndex = 3;
             this.label14.Text = "Proyectos del Cliente:";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(459, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(229, 21);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 26);
-            this.textBox3.TabIndex = 1;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(16, 24);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(205, 20);
+            this.label13.Size = new System.Drawing.Size(153, 20);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Ingrese Nombre del Cliente:";
+            this.label13.Text = "Seleccione el cliente";
             // 
             // tabPage3
             // 
@@ -961,6 +1000,36 @@
             this.pn_carteraP.Size = new System.Drawing.Size(1034, 670);
             this.pn_carteraP.TabIndex = 2;
             // 
+            // proyectoTableAdapter
+            // 
+            this.proyectoTableAdapter.ClearBeforeFill = true;
+            // 
+            // cmb_proyecto
+            // 
+            this.cmb_proyecto.FormattingEnabled = true;
+            this.cmb_proyecto.Location = new System.Drawing.Point(368, 37);
+            this.cmb_proyecto.Name = "cmb_proyecto";
+            this.cmb_proyecto.Size = new System.Drawing.Size(198, 28);
+            this.cmb_proyecto.TabIndex = 11;
+            this.cmb_proyecto.SelectedIndexChanged += new System.EventHandler(this.cmb_proyecto_SelectedIndexChanged);
+            // 
+            // dgv_servicio
+            // 
+            this.dgv_servicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_servicio.Location = new System.Drawing.Point(26, 446);
+            this.dgv_servicio.Name = "dgv_servicio";
+            this.dgv_servicio.Size = new System.Drawing.Size(400, 115);
+            this.dgv_servicio.TabIndex = 12;
+            // 
+            // cmb_cliente2
+            // 
+            this.cmb_cliente2.FormattingEnabled = true;
+            this.cmb_cliente2.Location = new System.Drawing.Point(175, 21);
+            this.cmb_cliente2.Name = "cmb_cliente2";
+            this.cmb_cliente2.Size = new System.Drawing.Size(201, 28);
+            this.cmb_cliente2.TabIndex = 5;
+            this.cmb_cliente2.SelectedIndexChanged += new System.EventHandler(this.cmb_cliente2_SelectedIndexChanged);
+            // 
             // ucCarteraP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -975,18 +1044,20 @@
             this.tab_ConGene.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataG_ConsultaGProyectos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tc_CEproyecto.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_compra)).EndInit();
             this.gb_CEdatosP.ResumeLayout(false);
             this.gb_CEdatosP.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_proyecto2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -994,6 +1065,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.pn_carteraP.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_servicio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1015,7 +1087,6 @@
         private System.Windows.Forms.Label lb_nomp;
         private System.Windows.Forms.TabPage tab_ConGene;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_Actu;
         private System.Windows.Forms.DataGridView dataG_ConsultaGProyectos;
         private System.Windows.Forms.Panel pn_carteraP;
         private System.Windows.Forms.ComboBox cmb_cliente;
@@ -1023,7 +1094,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabControl tc_CEproyecto;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_compra;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox gb_CEdatosP;
         private System.Windows.Forms.Label label6;
@@ -1031,12 +1102,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btn_CEbuscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1046,10 +1112,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgv_proyecto2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -1073,15 +1137,30 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txt_monto;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txt_tipo;
+        private System.Windows.Forms.TextBox txt_fechaFin;
+        private System.Windows.Forms.TextBox txt_fechaInicio;
+        private System.Windows.Forms.TextBox txt_nombreCliente;
+        private System.Windows.Forms.TextBox txt_descripcion;
+        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.TextBox txt_estado;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.BindingSource proyectoBindingSource;
+        private IngenieriayServiciosIndustrialesDataSet2 ingenieriayServiciosIndustrialesDataSet2;
+        private IngenieriayServiciosIndustrialesDataSet2TableAdapters.ProyectoTableAdapter proyectoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroProyectoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProyectoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadoProyectoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaInicioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoProyectoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn abonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn manodeObraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox cmb_proyecto;
+        private System.Windows.Forms.DataGridView dgv_servicio;
+        private System.Windows.Forms.ComboBox cmb_cliente2;
     }
 }

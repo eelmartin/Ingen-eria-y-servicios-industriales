@@ -12,11 +12,7 @@ namespace Capa.DATOS
         [PrimaryKey]
         [AutoIncrement]
         public int idMaterial { get; set; }
-        public int idOrdenCompra { get; set; }
-        public int cantidadMat { get; set; }
-        public float precioMat { get; set; }
         public string nomMateriales { get; set; }
-        public int CantidadMat { get; set; }
         public string Unidad { get; set; }
     }
 }

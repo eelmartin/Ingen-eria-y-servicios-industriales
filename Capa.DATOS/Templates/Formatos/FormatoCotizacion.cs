@@ -3,31 +3,29 @@ using System.Collections.Generic;
 
 namespace Capa.DATOS.Templates
 {
-    public class FormatoCompra : IPdfTemplate
+    public class FormatoCotizacion : IPdfTemplate
     {
         private Dictionary<string, string> _FormData;
-        private string _Template = "C:/Users/Ed/Desktop/OrdenCompraF.pdf";
+        private string _Template = "C:/Users/Ed/Desktop/formatoCotizacionF.pdf";
 
-        public FormatoCompra(int numorden , int numproyecto, string nombreprovedor, string rfc, string tel, string correo, string colonia, string calle, string num, string concepto, string cantidad, string unidad, string precio, string total, int totalGeneral)
+        public FormatoCotizacion(string nombrecliente, string rfc, string tel, string correo, string colonia, string calle, string num, string descripcion,  string concepto, string cantidad, string precio, string total, int totalGeneral)
         {
             _FormData = new Dictionary<string, string>
             {
-                { "NUMORDENC", numorden.ToString()},
-                { "NUMPROYECTO", numproyecto.ToString() },
                 { "FECHA",String.Format(DateTime.Now.ToShortDateString())},
-                { "NOMBREPROVEEDOR", nombreprovedor },
+                { "NOMBRECLIENTE", nombrecliente },
                 { "RFC", rfc },
                 { "TELEFONO", tel},
                 { "CORREO", correo },
                 { "COLONIA", colonia},
                 { "CALLE",calle },
                 { "NUMERO",num },
+                { "DESCRIPCION", descripcion },
                 { "COLCONCEPTO",concepto },
                 { "COLCANTIDAD",cantidad },
-                { "COLUNIDAD", unidad },
                 { "COLPRECIO", precio },
                 { "COLTOTAL", total },
-                { "TOTALMATERIALES", totalGeneral.ToString() }
+                { "TOTALCOTIZACION", totalGeneral.ToString() }
             };
 
 

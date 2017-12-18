@@ -34,6 +34,12 @@ namespace Ingeníeria_y_servicios_industriales
         public ucProveedores()
         {
             InitializeComponent();
+            Capa.BL.Interfaces.IProveedor iProveedor = new Capa.BL.Clases.Proveedor();
+            BindingSource bs = new BindingSource();
+            bs.DataSource = iProveedor.listarProveerdor();            
+            dgvProveedor.DataSource = bs;
+            bs.ResetBindings(false);
+
         }
 
         private void ucProveedores_Load(object sender, EventArgs e)
@@ -43,8 +49,7 @@ namespace Ingeníeria_y_servicios_industriales
 
         private void btn_consultaP_Click(object sender, EventArgs e)
         {
-            Capa.BL.Interfaces.IProveedor iProveedor = new Capa.BL.Clases.Proveedor();
-            dgvProveedor.DataSource = iProveedor.listarProveerdor();
+            
         }
         Validacion val = new Validacion();
         private void btn_registrarP_Click(object sender, EventArgs e)
@@ -71,6 +76,8 @@ namespace Ingeníeria_y_servicios_industriales
                     };
                     iProveedor.insertarProveedor(proveedor);
                     MessageBox.Show("Proveedor registrado");
+
+
                     txt_nombrePro.Text = "";
                     mtb_PR.Text = "";
                     txt_coloniaPro.Text = "";

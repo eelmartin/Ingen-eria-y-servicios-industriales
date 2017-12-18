@@ -1,5 +1,4 @@
-﻿
-using Capa.DATOS.Templates;
+﻿using Capa.DATOS.Templates;
 using iText.Forms;
 using iText.Kernel.Pdf;
 using System;
@@ -14,7 +13,7 @@ namespace Capa.BL.Helpers
         {
             return LlenarForm(template.GetForm(), template.GetTemplate(), pathSalida);
         }
-        private static bool LlenarForm(Dictionary<string,string> data, string pathEntrada, string pathSalida)
+        private static bool LlenarForm(Dictionary<string, string> data, string pathEntrada, string pathSalida)
         {
             try
             {

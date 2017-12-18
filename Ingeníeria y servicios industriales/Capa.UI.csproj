@@ -73,6 +73,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IngenieriayServiciosIndustrialesDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="IngenieriayServiciosIndustrialesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IngenieriayServiciosIndustrialesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IngenieriayServiciosIndustrialesDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IngenieriayServiciosIndustrialesDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ucCarteraP.cs">
@@ -152,6 +162,7 @@
     <EmbeddedResource Include="ucProveedores.resx">
       <DependentUpon>ucProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Capa.DATOS.Materiales.datasource" />
     <None Include="IngenieriayServiciosIndustrialesDataSet.xsc">
       <DependentUpon>IngenieriayServiciosIndustrialesDataSet.xsd</DependentUpon>
     </None>
@@ -162,6 +173,28 @@
     </None>
     <None Include="IngenieriayServiciosIndustrialesDataSet.xss">
       <DependentUpon>IngenieriayServiciosIndustrialesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriayServiciosIndustrialesDataSet1.xsc">
+      <DependentUpon>IngenieriayServiciosIndustrialesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriayServiciosIndustrialesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IngenieriayServiciosIndustrialesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IngenieriayServiciosIndustrialesDataSet1.xss">
+      <DependentUpon>IngenieriayServiciosIndustrialesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriayServiciosIndustrialesDataSet2.xsc">
+      <DependentUpon>IngenieriayServiciosIndustrialesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriayServiciosIndustrialesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IngenieriayServiciosIndustrialesDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IngenieriayServiciosIndustrialesDataSet2.xss">
+      <DependentUpon>IngenieriayServiciosIndustrialesDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -204,6 +237,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

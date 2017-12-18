@@ -31,12 +31,17 @@ namespace Ingeníeria_y_servicios_industriales
         public ucClientes()
         {
             InitializeComponent();
+            Capa.BL.Interfaces.ICliente icliente = new Capa.BL.Clases.Cliente();
+
+            BindingSource bs = new BindingSource();
+            bs.DataSource = icliente.listarCliente(); ;
+            dgv_ConsultaC.DataSource = bs;
+
         }
 
         private void btn_consultarC_Click(object sender, EventArgs e)
         {
-            Capa.BL.Interfaces.ICliente icliente = new Capa.BL.Clases.Cliente();
-            dgv_ConsultaC.DataSource = icliente.listarCliente();
+            
 
         }
         Validacion val = new Validacion();
@@ -64,6 +69,8 @@ namespace Ingeníeria_y_servicios_industriales
                     };
                     icliente.insertarCliente(cliente);
                     MessageBox.Show("Cliente registrado");
+
+
                     txt_nomC.Text = "";
                     txt_colC.Text = "";
                     txt_calleC.Text = "";

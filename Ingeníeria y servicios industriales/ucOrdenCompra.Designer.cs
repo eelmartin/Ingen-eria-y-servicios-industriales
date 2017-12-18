@@ -28,19 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_ordenCompra = new System.Windows.Forms.Label();
             this.tc_ordenCompra = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cmb_nproyecto = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lbl_unidad = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
             this.lbl_total2 = new System.Windows.Forms.Label();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
-            this.txt_concepto = new System.Windows.Forms.TextBox();
             this.lbl_precio = new System.Windows.Forms.Label();
             this.lbl_cantidad = new System.Windows.Forms.Label();
             this.lbl_concepto = new System.Windows.Forms.Label();
@@ -64,20 +63,61 @@
             this.btn_pdf = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.dgv_materiales = new System.Windows.Forms.DataGridView();
-            this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_numeroPOC = new System.Windows.Forms.TextBox();
             this.btn_generarOrden = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txt_nomaterial = new System.Windows.Forms.TextBox();
+            this.lbl_nombre = new System.Windows.Forms.Label();
+            this.lbl_unida = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmb_unidad = new System.Windows.Forms.ComboBox();
+            this.btn_registrarM = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgv_CM = new System.Windows.Forms.DataGridView();
+            this.cmb_concepto = new System.Windows.Forms.ComboBox();
+            this.txt_unidad = new System.Windows.Forms.TextBox();
+            this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.materialesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ingenieriayServiciosIndustrialesDataSet1 = new Ingeníeria_y_servicios_industriales.IngenieriayServiciosIndustrialesDataSet1();
+            this.materialesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.materialesTableAdapter = new Ingeníeria_y_servicios_industriales.IngenieriayServiciosIndustrialesDataSet1TableAdapters.MaterialesTableAdapter();
+            this.materialesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.ingenieriayServiciosIndustrialesDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.materialesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.materialesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.materialesBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.nomMaterialesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idMaterialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ingenieriayServiciosIndustrialesDataSet2 = new Ingeníeria_y_servicios_industriales.IngenieriayServiciosIndustrialesDataSet2();
+            this.materialesBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.materialesTableAdapter1 = new Ingeníeria_y_servicios_industriales.IngenieriayServiciosIndustrialesDataSet2TableAdapters.MaterialesTableAdapter();
             this.panel1.SuspendLayout();
             this.tc_ordenCompra.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gb_datosprovedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_materiales)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,15 +152,15 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.txt_unidad);
+            this.tabPage1.Controls.Add(this.cmb_concepto);
             this.tabPage1.Controls.Add(this.cmb_nproyecto);
-            this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.lbl_unidad);
             this.tabPage1.Controls.Add(this.lbl_total);
             this.tabPage1.Controls.Add(this.lbl_total2);
             this.tabPage1.Controls.Add(this.btn_agregar);
             this.tabPage1.Controls.Add(this.txt_precio);
             this.tabPage1.Controls.Add(this.txt_cantidad);
-            this.tabPage1.Controls.Add(this.txt_concepto);
             this.tabPage1.Controls.Add(this.lbl_precio);
             this.tabPage1.Controls.Add(this.lbl_cantidad);
             this.tabPage1.Controls.Add(this.lbl_concepto);
@@ -150,23 +190,10 @@
             this.cmb_nproyecto.TabIndex = 29;
             this.cmb_nproyecto.SelectedIndexChanged += new System.EventHandler(this.cmb_nproyecto_SelectedIndexChanged);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "PZ",
-            "MT",
-            "CM",
-            "KG"});
-            this.comboBox1.Location = new System.Drawing.Point(533, 267);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(53, 26);
-            this.comboBox1.TabIndex = 28;
-            // 
             // lbl_unidad
             // 
             this.lbl_unidad.AutoSize = true;
-            this.lbl_unidad.Location = new System.Drawing.Point(465, 270);
+            this.lbl_unidad.Location = new System.Drawing.Point(300, 270);
             this.lbl_unidad.Name = "lbl_unidad";
             this.lbl_unidad.Size = new System.Drawing.Size(65, 18);
             this.lbl_unidad.TabIndex = 27;
@@ -180,6 +207,7 @@
             this.lbl_total.Size = new System.Drawing.Size(73, 18);
             this.lbl_total.TabIndex = 26;
             this.lbl_total.Text = "total $$$";
+            this.lbl_total.Click += new System.EventHandler(this.lbl_total_Click);
             // 
             // lbl_total2
             // 
@@ -192,7 +220,7 @@
             // 
             // btn_agregar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(740, 262);
+            this.btn_agregar.Location = new System.Drawing.Point(820, 262);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(105, 35);
             this.btn_agregar.TabIndex = 24;
@@ -202,29 +230,22 @@
             // 
             // txt_precio
             // 
-            this.txt_precio.Location = new System.Drawing.Point(660, 267);
+            this.txt_precio.Location = new System.Drawing.Point(731, 267);
             this.txt_precio.Name = "txt_precio";
             this.txt_precio.Size = new System.Drawing.Size(74, 24);
             this.txt_precio.TabIndex = 23;
             // 
             // txt_cantidad
             // 
-            this.txt_cantidad.Location = new System.Drawing.Point(385, 267);
+            this.txt_cantidad.Location = new System.Drawing.Point(572, 267);
             this.txt_cantidad.Name = "txt_cantidad";
             this.txt_cantidad.Size = new System.Drawing.Size(74, 24);
             this.txt_cantidad.TabIndex = 22;
             // 
-            // txt_concepto
-            // 
-            this.txt_concepto.Location = new System.Drawing.Point(122, 267);
-            this.txt_concepto.Name = "txt_concepto";
-            this.txt_concepto.Size = new System.Drawing.Size(172, 24);
-            this.txt_concepto.TabIndex = 21;
-            // 
             // lbl_precio
             // 
             this.lbl_precio.AutoSize = true;
-            this.lbl_precio.Location = new System.Drawing.Point(592, 270);
+            this.lbl_precio.Location = new System.Drawing.Point(663, 270);
             this.lbl_precio.Name = "lbl_precio";
             this.lbl_precio.Size = new System.Drawing.Size(62, 18);
             this.lbl_precio.TabIndex = 20;
@@ -233,7 +254,7 @@
             // lbl_cantidad
             // 
             this.lbl_cantidad.AutoSize = true;
-            this.lbl_cantidad.Location = new System.Drawing.Point(300, 270);
+            this.lbl_cantidad.Location = new System.Drawing.Point(487, 270);
             this.lbl_cantidad.Name = "lbl_cantidad";
             this.lbl_cantidad.Size = new System.Drawing.Size(79, 18);
             this.lbl_cantidad.TabIndex = 19;
@@ -399,9 +420,10 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(15, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 18);
+            this.label1.Size = new System.Drawing.Size(91, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Proveedor: ";
+            this.label1.Text = "Proveedor:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cmb_proveedor
             // 
@@ -440,43 +462,14 @@
             this.dgv_materiales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_materiales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Concepto,
+            this.unidad,
             this.Cantidad,
             this.Precio,
-            this.unidad,
             this.Total});
             this.dgv_materiales.Location = new System.Drawing.Point(40, 311);
             this.dgv_materiales.Name = "dgv_materiales";
             this.dgv_materiales.Size = new System.Drawing.Size(805, 215);
             this.dgv_materiales.TabIndex = 6;
-            // 
-            // Concepto
-            // 
-            this.Concepto.HeaderText = "Concepto";
-            this.Concepto.Name = "Concepto";
-            this.Concepto.Width = 245;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 165;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.Width = 155;
-            // 
-            // unidad
-            // 
-            this.unidad.HeaderText = "Unidad";
-            this.unidad.Name = "unidad";
-            // 
-            // Total
-            // 
-            this.Total.HeaderText = "Total";
-            this.Total.Name = "Total";
-            this.Total.Width = 145;
             // 
             // label2
             // 
@@ -509,13 +502,242 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(969, 587);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Imprimir";
+            this.tabPage2.Text = "Materiales";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // txt_nomaterial
+            // 
+            this.txt_nomaterial.Location = new System.Drawing.Point(126, 46);
+            this.txt_nomaterial.Name = "txt_nomaterial";
+            this.txt_nomaterial.Size = new System.Drawing.Size(231, 24);
+            this.txt_nomaterial.TabIndex = 0;
+            // 
+            // lbl_nombre
+            // 
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Location = new System.Drawing.Point(47, 49);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(73, 18);
+            this.lbl_nombre.TabIndex = 1;
+            this.lbl_nombre.Text = "Nombre:";
+            // 
+            // lbl_unida
+            // 
+            this.lbl_unida.AutoSize = true;
+            this.lbl_unida.Location = new System.Drawing.Point(409, 49);
+            this.lbl_unida.Name = "lbl_unida";
+            this.lbl_unida.Size = new System.Drawing.Size(65, 18);
+            this.lbl_unida.TabIndex = 2;
+            this.lbl_unida.Text = "Unidad:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_registrarM);
+            this.groupBox1.Controls.Add(this.cmb_unidad);
+            this.groupBox1.Controls.Add(this.txt_nomaterial);
+            this.groupBox1.Controls.Add(this.lbl_unida);
+            this.groupBox1.Controls.Add(this.lbl_nombre);
+            this.groupBox1.Location = new System.Drawing.Point(28, 43);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(707, 142);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Registrar Material";
+            // 
+            // cmb_unidad
+            // 
+            this.cmb_unidad.FormattingEnabled = true;
+            this.cmb_unidad.Items.AddRange(new object[] {
+            "Saco",
+            "Metro",
+            "Litro",
+            "Pieza",
+            "Tramo",
+            "Kilo",
+            "Caja"});
+            this.cmb_unidad.Location = new System.Drawing.Point(480, 46);
+            this.cmb_unidad.Name = "cmb_unidad";
+            this.cmb_unidad.Size = new System.Drawing.Size(184, 26);
+            this.cmb_unidad.TabIndex = 3;
+            // 
+            // btn_registrarM
+            // 
+            this.btn_registrarM.Location = new System.Drawing.Point(50, 101);
+            this.btn_registrarM.Name = "btn_registrarM";
+            this.btn_registrarM.Size = new System.Drawing.Size(92, 26);
+            this.btn_registrarM.TabIndex = 4;
+            this.btn_registrarM.Text = "Registrar";
+            this.btn_registrarM.UseVisualStyleBackColor = true;
+            this.btn_registrarM.Click += new System.EventHandler(this.btn_registrarM_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgv_CM);
+            this.groupBox2.Location = new System.Drawing.Point(28, 222);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(707, 343);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Consulta General";
+            // 
+            // dgv_CM
+            // 
+            this.dgv_CM.AllowUserToAddRows = false;
+            this.dgv_CM.AllowUserToDeleteRows = false;
+            this.dgv_CM.AutoGenerateColumns = false;
+            this.dgv_CM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_CM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomMaterialesDataGridViewTextBoxColumn,
+            this.idMaterialDataGridViewTextBoxColumn,
+            this.unidadDataGridViewTextBoxColumn});
+            this.dgv_CM.DataSource = this.materialesBindingSource7;
+            this.dgv_CM.Location = new System.Drawing.Point(50, 70);
+            this.dgv_CM.Name = "dgv_CM";
+            this.dgv_CM.ReadOnly = true;
+            this.dgv_CM.Size = new System.Drawing.Size(584, 238);
+            this.dgv_CM.TabIndex = 0;
+            this.dgv_CM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CM_CellContentClick);
+            // 
+            // cmb_concepto
+            // 
+            this.cmb_concepto.FormattingEnabled = true;
+            this.cmb_concepto.Location = new System.Drawing.Point(122, 265);
+            this.cmb_concepto.Name = "cmb_concepto";
+            this.cmb_concepto.Size = new System.Drawing.Size(172, 26);
+            this.cmb_concepto.TabIndex = 30;
+            this.cmb_concepto.SelectedIndexChanged += new System.EventHandler(this.cmb_concepto_SelectedIndexChanged);
+            // 
+            // txt_unidad
+            // 
+            this.txt_unidad.Location = new System.Drawing.Point(371, 267);
+            this.txt_unidad.Name = "txt_unidad";
+            this.txt_unidad.ReadOnly = true;
+            this.txt_unidad.Size = new System.Drawing.Size(100, 24);
+            this.txt_unidad.TabIndex = 31;
+            // 
+            // Concepto
+            // 
+            this.Concepto.HeaderText = "Concepto";
+            this.Concepto.Name = "Concepto";
+            this.Concepto.Width = 245;
+            // 
+            // unidad
+            // 
+            this.unidad.HeaderText = "Unidad";
+            this.unidad.Name = "unidad";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 165;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.Width = 155;
+            // 
+            // Total
+            // 
+            this.Total.HeaderText = "Total";
+            this.Total.Name = "Total";
+            this.Total.Width = 145;
+            // 
+            // materialesBindingSource
+            // 
+            this.materialesBindingSource.DataSource = typeof(Capa.DATOS.Materiales);
+            // 
+            // materialesBindingSource1
+            // 
+            this.materialesBindingSource1.DataSource = typeof(Capa.DATOS.Materiales);
+            // 
+            // ingenieriayServiciosIndustrialesDataSet1
+            // 
+            this.ingenieriayServiciosIndustrialesDataSet1.DataSetName = "IngenieriayServiciosIndustrialesDataSet1";
+            this.ingenieriayServiciosIndustrialesDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // materialesBindingSource2
+            // 
+            this.materialesBindingSource2.DataMember = "Materiales";
+            this.materialesBindingSource2.DataSource = this.ingenieriayServiciosIndustrialesDataSet1;
+            // 
+            // materialesTableAdapter
+            // 
+            this.materialesTableAdapter.ClearBeforeFill = true;
+            // 
+            // materialesBindingSource3
+            // 
+            this.materialesBindingSource3.DataMember = "Materiales";
+            this.materialesBindingSource3.DataSource = this.ingenieriayServiciosIndustrialesDataSet1;
+            // 
+            // ingenieriayServiciosIndustrialesDataSet1BindingSource
+            // 
+            this.ingenieriayServiciosIndustrialesDataSet1BindingSource.DataSource = this.ingenieriayServiciosIndustrialesDataSet1;
+            this.ingenieriayServiciosIndustrialesDataSet1BindingSource.Position = 0;
+            // 
+            // materialesBindingSource4
+            // 
+            this.materialesBindingSource4.DataMember = "Materiales";
+            this.materialesBindingSource4.DataSource = this.ingenieriayServiciosIndustrialesDataSet1;
+            // 
+            // materialesBindingSource5
+            // 
+            this.materialesBindingSource5.DataMember = "Materiales";
+            this.materialesBindingSource5.DataSource = this.ingenieriayServiciosIndustrialesDataSet1;
+            // 
+            // materialesBindingSource6
+            // 
+            this.materialesBindingSource6.DataMember = "Materiales";
+            this.materialesBindingSource6.DataSource = this.ingenieriayServiciosIndustrialesDataSet1BindingSource;
+            // 
+            // nomMaterialesDataGridViewTextBoxColumn
+            // 
+            this.nomMaterialesDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nomMaterialesDataGridViewTextBoxColumn.DataPropertyName = "NomMateriales";
+            this.nomMaterialesDataGridViewTextBoxColumn.HeaderText = "Nombre del material";
+            this.nomMaterialesDataGridViewTextBoxColumn.Name = "nomMaterialesDataGridViewTextBoxColumn";
+            this.nomMaterialesDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomMaterialesDataGridViewTextBoxColumn.Width = 168;
+            // 
+            // idMaterialDataGridViewTextBoxColumn
+            // 
+            this.idMaterialDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.idMaterialDataGridViewTextBoxColumn.DataPropertyName = "IdMaterial";
+            this.idMaterialDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.idMaterialDataGridViewTextBoxColumn.Name = "idMaterialDataGridViewTextBoxColumn";
+            this.idMaterialDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idMaterialDataGridViewTextBoxColumn.Width = 49;
+            // 
+            // unidadDataGridViewTextBoxColumn
+            // 
+            this.unidadDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.unidadDataGridViewTextBoxColumn.DataPropertyName = "Unidad";
+            this.unidadDataGridViewTextBoxColumn.HeaderText = "Unidad";
+            this.unidadDataGridViewTextBoxColumn.Name = "unidadDataGridViewTextBoxColumn";
+            this.unidadDataGridViewTextBoxColumn.ReadOnly = true;
+            this.unidadDataGridViewTextBoxColumn.Width = 85;
+            // 
+            // ingenieriayServiciosIndustrialesDataSet2
+            // 
+            this.ingenieriayServiciosIndustrialesDataSet2.DataSetName = "IngenieriayServiciosIndustrialesDataSet2";
+            this.ingenieriayServiciosIndustrialesDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // materialesBindingSource7
+            // 
+            this.materialesBindingSource7.DataMember = "Materiales";
+            this.materialesBindingSource7.DataSource = this.ingenieriayServiciosIndustrialesDataSet2;
+            // 
+            // materialesTableAdapter1
+            // 
+            this.materialesTableAdapter1.ClearBeforeFill = true;
             // 
             // ucOrdenCompra
             // 
@@ -532,6 +754,22 @@
             this.gb_datosprovedor.ResumeLayout(false);
             this.gb_datosprovedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_materiales)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenieriayServiciosIndustrialesDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialesBindingSource7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -568,7 +806,6 @@
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.TextBox txt_precio;
         private System.Windows.Forms.TextBox txt_cantidad;
-        private System.Windows.Forms.TextBox txt_concepto;
         private System.Windows.Forms.Label lbl_precio;
         private System.Windows.Forms.Label lbl_cantidad;
         private System.Windows.Forms.Label lbl_concepto;
@@ -576,12 +813,37 @@
         private System.Windows.Forms.Label lbl_total;
         private System.Windows.Forms.Label lbl_total2;
         private System.Windows.Forms.Label lbl_unidad;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_nproyecto;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgv_CM;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_registrarM;
+        private System.Windows.Forms.ComboBox cmb_unidad;
+        private System.Windows.Forms.TextBox txt_nomaterial;
+        private System.Windows.Forms.Label lbl_unida;
+        private System.Windows.Forms.Label lbl_nombre;
+        private System.Windows.Forms.TextBox txt_unidad;
+        private System.Windows.Forms.ComboBox cmb_concepto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Concepto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-        private System.Windows.Forms.ComboBox cmb_nproyecto;
+        private System.Windows.Forms.BindingSource materialesBindingSource;
+        private System.Windows.Forms.BindingSource materialesBindingSource1;
+        private System.Windows.Forms.BindingSource materialesBindingSource2;
+        private IngenieriayServiciosIndustrialesDataSet1 ingenieriayServiciosIndustrialesDataSet1;
+        private IngenieriayServiciosIndustrialesDataSet1TableAdapters.MaterialesTableAdapter materialesTableAdapter;
+        private System.Windows.Forms.BindingSource materialesBindingSource3;
+        private System.Windows.Forms.BindingSource ingenieriayServiciosIndustrialesDataSet1BindingSource;
+        private System.Windows.Forms.BindingSource materialesBindingSource4;
+        private System.Windows.Forms.BindingSource materialesBindingSource6;
+        private System.Windows.Forms.BindingSource materialesBindingSource5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomMaterialesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idMaterialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource materialesBindingSource7;
+        private IngenieriayServiciosIndustrialesDataSet2 ingenieriayServiciosIndustrialesDataSet2;
+        private IngenieriayServiciosIndustrialesDataSet2TableAdapters.MaterialesTableAdapter materialesTableAdapter1;
     }
 }

@@ -88,6 +88,7 @@
       <DependentUpon>BD.settings</DependentUpon>
     </Compile>
     <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\PrecioMateriales.cs" />
     <Compile Include="Clases\Servicios.cs" />
     <Compile Include="Clases\Materiales.cs" />
     <Compile Include="Clases\OrdendeServicio.cs" />
@@ -102,6 +103,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\ICliente.cs" />
+    <Compile Include="Interfaces\IPrecioMateriales.cs" />
     <Compile Include="Interfaces\IServicios.cs" />
     <Compile Include="Interfaces\IMateriales.cs" />
     <Compile Include="Interfaces\IOrdendeServicio.cs" />

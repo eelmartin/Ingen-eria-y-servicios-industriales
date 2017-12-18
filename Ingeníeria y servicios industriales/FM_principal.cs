@@ -40,7 +40,7 @@ namespace Ingeníeria_y_servicios_industriales
         private void btn_CDP_Click(object sender, EventArgs e)
         {
             //Cambiar color del boton
-            btn_CDP.BackColor = Color.Gold;
+            btn_CDP.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(2);
             //activar boton de regresar
             btn_regresar.Visible = true;
@@ -60,7 +60,7 @@ namespace Ingeníeria_y_servicios_industriales
         private void btn_cliente_Click(object sender, EventArgs e)
         {
             //Cambiar color del boton
-            btn_cliente.BackColor = Color.Gold;
+            btn_cliente.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(3);
             //activar boton de regresar
             btn_regresar.Visible = true;
@@ -79,8 +79,8 @@ namespace Ingeníeria_y_servicios_industriales
 
         private void btn_proveedores_Click(object sender, EventArgs e)
         {
-             //Cambiar color del boton
-             btn_proveedores.BackColor = Color.Gold;
+            //Cambiar color del boton
+            btn_proveedores.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(4);
             //activar boton de regresar
             btn_regresar.Visible = true;
@@ -101,7 +101,7 @@ namespace Ingeníeria_y_servicios_industriales
         private void btn_OrdenS_Click(object sender, EventArgs e)
         {
             //Cambiar color del boton
-            btn_OrdenS.BackColor = Color.Gold;
+            btn_OrdenS.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(6);
             //activar boton de regresar
             btn_regresar.Visible = true;
@@ -125,7 +125,7 @@ namespace Ingeníeria_y_servicios_industriales
         private void btn_OrdenC_Click(object sender, EventArgs e)
         {
             //Cambiar color del boton
-            btn_OrdenC.BackColor = Color.Gold;
+            btn_OrdenC.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(5);
             //activar boton de regresar
             btn_regresar.Visible = true;
@@ -146,7 +146,7 @@ namespace Ingeníeria_y_servicios_industriales
         private void btn_cotizacion_Click(object sender, EventArgs e)
         {
             //Cambiar color del boton
-            btn_cotizacion.BackColor = Color.Gold;
+            btn_cotizacion.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(7);
             //activar boton de regresar
             btn_regresar.Visible = true;
@@ -174,7 +174,7 @@ namespace Ingeníeria_y_servicios_industriales
         private void btn_inicio_Click(object sender, EventArgs e)
         {
             //Cambiar color del boton
-            btn_inicio.BackColor = Color.Gold;
+            btn_inicio.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(1);
 
             btn_regresar.Visible = false;
@@ -270,7 +270,7 @@ namespace Ingeníeria_y_servicios_industriales
             ucInicio.Instance.Dock = DockStyle.Fill;
             ucInicio.Instance.BringToFront();
             btn_regresar.Visible = false;
-            btn_inicio.BackColor = Color.Gold;
+            btn_inicio.BackColor = Color.FromArgb(34, 111, 238);
             pintarBotones(1);
         }
 

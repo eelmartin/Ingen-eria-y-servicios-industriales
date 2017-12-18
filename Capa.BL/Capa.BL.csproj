@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\PrecioMateriales.cs" />
     <Compile Include="Clases\Servicios.cs" />
     <Compile Include="Clases\OrdendeServicio.cs" />
     <Compile Include="Clases\Cliente.cs" />
@@ -96,6 +97,7 @@
     </Compile>
     <Compile Include="Helpers\PdfHandler.cs" />
     <Compile Include="Interfaces\ICliente.cs" />
+    <Compile Include="Interfaces\IPrecioMateriales.cs" />
     <Compile Include="Interfaces\IServicios.cs" />
     <Compile Include="Interfaces\IOrdendeServicio.cs" />
     <Compile Include="Interfaces\IOrdendeCompra.cs" />

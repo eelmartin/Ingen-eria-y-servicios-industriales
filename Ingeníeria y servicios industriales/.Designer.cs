@@ -46,7 +46,7 @@
             // pn_menu
             // 
             this.pn_menu.AutoSize = true;
-            this.pn_menu.BackColor = System.Drawing.Color.Brown;
+            this.pn_menu.BackColor = System.Drawing.Color.SkyBlue;
             this.pn_menu.Controls.Add(this.btn_salir);
             this.pn_menu.Controls.Add(this.btn_inicio);
             this.pn_menu.Controls.Add(this.btn_cotizacion);
@@ -73,9 +73,9 @@
             // 
             // btn_inicio
             // 
-            this.btn_inicio.BackColor = System.Drawing.Color.Gold;
+            this.btn_inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(111)))), ((int)(((byte)(238)))));
             this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inicio.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_inicio.Location = new System.Drawing.Point(0, 0);
             this.btn_inicio.Name = "btn_inicio";
             this.btn_inicio.Size = new System.Drawing.Size(198, 39);
@@ -88,7 +88,7 @@
             // 
             this.btn_cotizacion.BackColor = System.Drawing.Color.Transparent;
             this.btn_cotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cotizacion.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cotizacion.Location = new System.Drawing.Point(0, 228);
             this.btn_cotizacion.Name = "btn_cotizacion";
             this.btn_cotizacion.Size = new System.Drawing.Size(198, 39);
@@ -103,7 +103,7 @@
             // 
             this.btn_OrdenS.BackColor = System.Drawing.Color.Transparent;
             this.btn_OrdenS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_OrdenS.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_OrdenS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_OrdenS.Location = new System.Drawing.Point(0, 190);
             this.btn_OrdenS.Name = "btn_OrdenS";
             this.btn_OrdenS.Size = new System.Drawing.Size(198, 39);
@@ -118,7 +118,7 @@
             // 
             this.btn_OrdenC.BackColor = System.Drawing.Color.Transparent;
             this.btn_OrdenC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_OrdenC.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_OrdenC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_OrdenC.Location = new System.Drawing.Point(0, 152);
             this.btn_OrdenC.Name = "btn_OrdenC";
             this.btn_OrdenC.Size = new System.Drawing.Size(198, 39);
@@ -133,7 +133,7 @@
             // 
             this.btn_CDP.BackColor = System.Drawing.Color.Transparent;
             this.btn_CDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CDP.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CDP.Location = new System.Drawing.Point(0, 38);
             this.btn_CDP.Name = "btn_CDP";
             this.btn_CDP.Size = new System.Drawing.Size(198, 39);
@@ -148,7 +148,7 @@
             // 
             this.btn_proveedores.BackColor = System.Drawing.Color.Transparent;
             this.btn_proveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_proveedores.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_proveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_proveedores.Location = new System.Drawing.Point(0, 114);
             this.btn_proveedores.Name = "btn_proveedores";
             this.btn_proveedores.Size = new System.Drawing.Size(198, 39);
@@ -163,7 +163,7 @@
             // 
             this.btn_cliente.BackColor = System.Drawing.Color.Transparent;
             this.btn_cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cliente.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cliente.Location = new System.Drawing.Point(0, 76);
             this.btn_cliente.Name = "btn_cliente";
             this.btn_cliente.Size = new System.Drawing.Size(198, 39);
@@ -176,6 +176,7 @@
             // 
             // pn_principal
             // 
+            this.pn_principal.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pn_principal.Location = new System.Drawing.Point(200, 1);
             this.pn_principal.Name = "pn_principal";
             this.pn_principal.Size = new System.Drawing.Size(1064, 698);
@@ -197,7 +198,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.pn_principal);
