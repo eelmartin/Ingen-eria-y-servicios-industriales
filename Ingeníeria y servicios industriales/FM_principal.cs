@@ -279,6 +279,169 @@ namespace Ingeníeria_y_servicios_industriales
          
         }
 
-        
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucInicio.Instance))
+            {
+                pn_principal.Controls.Add(ucInicio.Instance);
+                ucInicio.Instance.Dock = DockStyle.Fill;
+                ucInicio.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucInicio.Instance.BringToFront();
+
+            }
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void carteraDeProyectosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucCarteraP.Instance))
+            {
+                pn_principal.Controls.Add(ucCarteraP.Instance);
+                ucCarteraP.Instance.Dock = DockStyle.Fill;
+                ucCarteraP.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucCarteraP.Instance.BringToFront();
+            }
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucClientes.Instance))
+            {
+                pn_principal.Controls.Add(ucClientes.Instance);
+                ucClientes.Instance.Dock = DockStyle.Fill;
+                ucClientes.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucClientes.Instance.BringToFront();
+            }
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucProveedores.Instance))
+            {
+                pn_principal.Controls.Add(ucProveedores.Instance);
+                ucProveedores.Instance.Dock = DockStyle.Fill;
+                ucProveedores.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucProveedores.Instance.BringToFront();
+
+            }
+        }
+
+        private void ordenDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucOrdenCompra.Instance))
+            {
+                pn_principal.Controls.Add(ucOrdenCompra.Instance);
+                ucOrdenCompra.Instance.Dock = DockStyle.Fill;
+                ucOrdenCompra.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucOrdenCompra.Instance.BringToFront();
+
+            }
+        }
+
+        private void ordenDeServicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucOrdenServicio.Instance))
+            {
+                pn_principal.Controls.Add(ucOrdenServicio.Instance);
+                ucOrdenServicio.Instance.Dock = DockStyle.Fill;
+                ucOrdenServicio.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucOrdenServicio.Instance.BringToFront();
+
+            }
+        }
+
+        private void cotizaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucCotizacion.Instance))
+            {
+                pn_principal.Controls.Add(ucCotizacion.Instance);
+                ucCotizacion.Instance.Dock = DockStyle.Fill;
+                ucCotizacion.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucCotizacion.Instance.BringToFront();
+
+            }
+        }
+
+        private void ribbon1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonOrbMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucAcercaDe.Instance))
+            {
+                pn_principal.Controls.Add(ucAcercaDe.Instance);
+                ucAcercaDe.Instance.Dock = DockStyle.Fill;
+                ucAcercaDe.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucAcercaDe.Instance.BringToFront();
+            }
+        }
+
+        private void ribbonOrbMenuItem5_Click(object sender, EventArgs e)
+        {
+            if (!pn_principal.Controls.Contains(ucAcercaDe.Instance))
+            {
+                pn_principal.Controls.Add(ucAcercaDe.Instance);
+                ucAcercaDe.Instance.Dock = DockStyle.Fill;
+                ucAcercaDe.Instance.BringToFront();
+
+            }
+            else
+            {
+                ucAcercaDe.Instance.BringToFront();
+            }
+        }
     }
 }

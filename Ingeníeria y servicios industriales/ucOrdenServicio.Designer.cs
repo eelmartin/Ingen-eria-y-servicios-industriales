@@ -31,11 +31,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tc_ordenServicio = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cmb_nproyecto = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lbl_unidad = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
             this.lbl_total2 = new System.Windows.Forms.Label();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_generarorden = new System.Windows.Forms.Button();
             this.dgv_servicios = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.txt_concepto = new System.Windows.Forms.TextBox();
             this.lbl_precio = new System.Windows.Forms.Label();
@@ -62,13 +69,6 @@
             this.btn_agregar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lbl_ordenservicio = new System.Windows.Forms.Label();
-            this.lbl_unidad = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmb_nproyecto = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.tc_ordenServicio.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -124,6 +124,39 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // cmb_nproyecto
+            // 
+            this.cmb_nproyecto.FormattingEnabled = true;
+            this.cmb_nproyecto.Location = new System.Drawing.Point(316, 17);
+            this.cmb_nproyecto.Name = "cmb_nproyecto";
+            this.cmb_nproyecto.Size = new System.Drawing.Size(207, 26);
+            this.cmb_nproyecto.TabIndex = 30;
+            this.cmb_nproyecto.SelectedIndexChanged += new System.EventHandler(this.cmb_nproyecto_SelectedIndexChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "HR",
+            "DIA",
+            "SEMANA"});
+            this.comboBox1.Location = new System.Drawing.Point(478, 266);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(112, 26);
+            this.comboBox1.TabIndex = 19;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // lbl_unidad
+            // 
+            this.lbl_unidad.AutoSize = true;
+            this.lbl_unidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_unidad.Location = new System.Drawing.Point(397, 269);
+            this.lbl_unidad.Name = "lbl_unidad";
+            this.lbl_unidad.Size = new System.Drawing.Size(60, 18);
+            this.lbl_unidad.TabIndex = 18;
+            this.lbl_unidad.Text = "Unidad";
+            this.lbl_unidad.Click += new System.EventHandler(this.label3_Click);
+            // 
             // lbl_total
             // 
             this.lbl_total.AutoSize = true;
@@ -178,6 +211,29 @@
             this.dgv_servicios.Name = "dgv_servicios";
             this.dgv_servicios.Size = new System.Drawing.Size(814, 215);
             this.dgv_servicios.TabIndex = 12;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Concepto";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 245;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Precio";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 155;
+            // 
+            // unidad
+            // 
+            this.unidad.HeaderText = "Unidad";
+            this.unidad.Name = "unidad";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Total";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 145;
             // 
             // txt_precio
             // 
@@ -425,62 +481,6 @@
             this.lbl_ordenservicio.Size = new System.Drawing.Size(225, 29);
             this.lbl_ordenservicio.TabIndex = 0;
             this.lbl_ordenservicio.Text = "Orden de Servicio";
-            // 
-            // lbl_unidad
-            // 
-            this.lbl_unidad.AutoSize = true;
-            this.lbl_unidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_unidad.Location = new System.Drawing.Point(397, 269);
-            this.lbl_unidad.Name = "lbl_unidad";
-            this.lbl_unidad.Size = new System.Drawing.Size(60, 18);
-            this.lbl_unidad.TabIndex = 18;
-            this.lbl_unidad.Text = "Unidad";
-            this.lbl_unidad.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "HR",
-            "DIA",
-            "SEMANA"});
-            this.comboBox1.Location = new System.Drawing.Point(478, 266);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(112, 26);
-            this.comboBox1.TabIndex = 19;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Concepto";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 245;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Precio";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 155;
-            // 
-            // unidad
-            // 
-            this.unidad.HeaderText = "Unidad";
-            this.unidad.Name = "unidad";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Total";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 145;
-            // 
-            // cmb_nproyecto
-            // 
-            this.cmb_nproyecto.FormattingEnabled = true;
-            this.cmb_nproyecto.Location = new System.Drawing.Point(316, 17);
-            this.cmb_nproyecto.Name = "cmb_nproyecto";
-            this.cmb_nproyecto.Size = new System.Drawing.Size(207, 26);
-            this.cmb_nproyecto.TabIndex = 30;
-            this.cmb_nproyecto.SelectedIndexChanged += new System.EventHandler(this.cmb_nproyecto_SelectedIndexChanged);
             // 
             // ucOrdenServicio
             // 

@@ -14,7 +14,10 @@ namespace Ingeníeria_y_servicios_industriales
     public partial class ucCarteraP : UserControl
     {
         string idCliente = "";
-
+        int mt = 0;
+        int mo = 0;
+        int st = 0;
+        int totalFinal = 0;
 
         private static ucCarteraP _instance;
 
@@ -131,7 +134,11 @@ namespace Ingeníeria_y_servicios_industriales
             dgv_compra.DataSource = null;
             dgv_compra.Refresh();
             dgv_compra.Rows.Clear();
-            
+            mt = 0;
+            mo = 0;
+            st = 0;
+            totalFinal = 0;
+
             string nProyecto = "";
             SqlConnection con3 = new SqlConnection(@"Data Source=MARTINSOTOPC;Initial Catalog=IngenieriayServiciosIndustriales;Integra" + "ted Security=True");//Establecemos parámetros de conexión
             con3.Open();//Iniciamos la conexión
@@ -159,6 +166,7 @@ namespace Ingeníeria_y_servicios_industriales
             if (dr2.Read())//Mientras exista contenido que leer, realizará lo siguiente
             {
                 txt_nombreCliente.Text = dr2["NombreCliente"].ToString();//Extraemos valor de la BD y lo colocamos en nuestro txt_rfc
+                
             }
             dr2.Close();
 
@@ -169,6 +177,10 @@ namespace Ingeníeria_y_servicios_industriales
             string str3 = "select * from OrdenDeCompra where NumProyecto='" + nProyecto + "'";//establecemos el query a ejecutar
             SqlCommand cmd3 = new SqlCommand(str3, con3);//Ejecutamos el query en la conexión establecidas
             SqlDataReader dr3 = cmd3.ExecuteReader();//Establecemos un datareader, que leerá los datos extraidos de la consulta
+            if (dr3.Read())//Mientras exista contenido que leer, realizará lo siguiente
+            {
+                mt = mt + int.Parse(dr3["TotalC"].ToString());
+            }
             var dataTable = new DataTable();
             dataTable.Load(dr3);
 
@@ -178,12 +190,16 @@ namespace Ingeníeria_y_servicios_industriales
             string str4 = "select * from OrdenDeServicio where NumProyecto='" + nProyecto + "'";//establecemos el query a ejecutar
             SqlCommand cmd4 = new SqlCommand(str4, con3);//Ejecutamos el query en la conexión establecidas
             SqlDataReader dr4 = cmd4.ExecuteReader();//Establecemos un datareader, que leerá los datos extraidos de la consulta
+            if (dr4.Read())//Mientras exista contenido que leer, realizará lo siguiente
+            {
+                mt = mt + int.Parse(dr4["TotalS"].ToString());
+            }
             var dataTable2 = new DataTable();
             dataTable2.Load(dr4);
 
             dgv_servicio.DataSource = dataTable2;
             dr4.Close();
-
+            lbl_mto.Text = mt.ToString();
 
 
         }
@@ -215,6 +231,11 @@ namespace Ingeníeria_y_servicios_industriales
             dataTable2.Load(dr4);
 
             dgv_proyecto2.DataSource = dataTable2;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

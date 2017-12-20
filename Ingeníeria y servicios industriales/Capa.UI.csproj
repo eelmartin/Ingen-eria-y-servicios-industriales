@@ -50,6 +50,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.Ribbon35">
+      <HintPath>..\Ribbon menu\System.Windows.Forms.Ribbon35.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -127,6 +131,12 @@
     <Compile Include="ucProveedores.Designer.cs">
       <DependentUpon>ucProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucAcercaDe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAcercaDe.Designer.cs">
+      <DependentUpon>ucAcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validacion.cs" />
     <EmbeddedResource Include="FM_principal.resx">
       <DependentUpon>FM_principal.cs</DependentUpon>
@@ -141,6 +151,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucAcercaDe.resx">
+      <DependentUpon>ucAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucCarteraP.resx">
       <DependentUpon>ucCarteraP.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +253,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

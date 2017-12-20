@@ -37,6 +37,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.lb_inicio);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -47,12 +48,12 @@
             // lb_inicio
             // 
             this.lb_inicio.AutoSize = true;
-            this.lb_inicio.Font = new System.Drawing.Font("Baskerville Old Face", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_inicio.Location = new System.Drawing.Point(364, 515);
+            this.lb_inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_inicio.Location = new System.Drawing.Point(341, 526);
             this.lb_inicio.Name = "lb_inicio";
-            this.lb_inicio.Size = new System.Drawing.Size(418, 31);
+            this.lb_inicio.Size = new System.Drawing.Size(463, 31);
             this.lb_inicio.TabIndex = 1;
-            this.lb_inicio.Text = "Ingenieria y Servicios Industriales.";
+            this.lb_inicio.Text = "Ingeniería y Servicios Industriales.";
             // 
             // pictureBox1
             // 
@@ -68,9 +69,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.panel1);
             this.Name = "ucInicio";
-            this.Size = new System.Drawing.Size(1044, 678);
+            this.Size = new System.Drawing.Size(1040, 674);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
